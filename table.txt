@@ -1,0 +1,28 @@
+CREATE TABLE personal_info(
+    first_name VARCHAR2(20) NOT NULL,
+    last_name VARCHAR2(20),
+    age NUMBER,
+    contact NUMBER PRIMARY KEY,
+    address VARCHAR2(25)
+);
+
+CREATE TABLE social_media(
+    username VARCHAR2(25) NOT NULL,
+    contact NUMBER ,
+    email VARCHAR2(30) PRIMARY KEY,
+    platform VARCHAR2(20)
+);
+
+CREATE TABLE document(
+    type VARCHAR2(30),
+    id NUMBER PRIMARY KEY,
+    issuedate DATE,
+    expirydate DATE
+);
+
+CREATE TABLE education(
+    institution VARCHAR2(50),
+    year DATE,
+    studentid NUMBER PRIMARY KEY,
+    marks NUMBER
+);
