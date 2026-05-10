@@ -1,0 +1,7 @@
+SELECT*FROM social_media;
+
+SELECT contact
+FROM personal_info;
+
+SELECT*FROM personal_info 
+WHERE age >18;
